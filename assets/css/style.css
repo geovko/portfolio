@@ -10,12 +10,12 @@ body {
     background-color: #000b16;
     font-size: 16px;
     color: var(--light);
+    font-family: TaHoma, Arial, Helvetica, sans-serif;
 }
 
 /* Main title in heading */
 h1 {
     font-size: 240%;
-    font-family: serif;
 }
 
 /* Each section's heading */
@@ -60,14 +60,21 @@ header {
 
 nav {
     padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+nav a {
+    border: 10px;
+    justify-content: space-between;
+    color: var(--main-color);
+    margin: 10px;
 }
 
 a {
-    border: 10px;
-    justify-content: space-between;
     text-decoration: none;
-    color: var(--main-color);
-    margin: 10px;
+    /*color: var(--main-color);*/
 }
 
 a:hover {
@@ -88,9 +95,14 @@ section {
     justify-content: space-between;
 }
 
-.profile {
-    width: 50%;
-    height: 50%;
+.profileImage {
+    width: 30%;
+    height: 30%;
+}
+
+.profileText {
+    width: 70%;
+    height: 70%;
 }
 
 .firstCard, .card {
