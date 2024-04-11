@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Philip's Portfolio</title>
-        <link rel="stylesheet" href="assets/css/reset.css" />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philip's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
 
-    <body>
+<body>
+    <header>
+        <h1>Philip's Portfolio</h1>
         <nav>
-            <menu>
-                <!-- each link skips to the related section on the website -->
-            </menu>
+            <!-- each link skips to the related section on the website -->
+            <a href="#About_Me">About Me</a>
+            <a href="#Work_Samples">Work Samples</a>
+            <a href="#Contacts">Contacts</a>
         </nav>
-        <section>
-            <h1>About Me</h1>
-            <profile>
-                <name>
-                    <!-- est moi -->
-                </name>
-                <photo>
-                    <!-- LinkedIn Photo? -->
-                </photo>
-                <desc>
-                    <!-- something about me -->
-                </desc>
-            </profile>
-        </section>
-        <section>
-            <h1>Work</h1>
-            <works>
-                <!-- For each 'works' include a title, image, and reactive UI -->
-            </works>
-            <works>
-                
-            </works>
-            <works>
-                
-            </works>
-            <works>
-                
-            </works>
-            <works>
-                
-            </works>
-        </section>
-        <section>
-            <h1>Contacts</h1>
-            <contact>
-                <!-- phone number, email, etc. -->
-            </contact>
-        </section>
-    </body>
+    </header>
+    <section id="About_Me">
+        <h1>About Me</h1>
+        <intro>
+            <!--Float to the left-->
+            <photoCard>
+                <h3>Philip Kim</h3>
+                <!-- <img src=".jpg" alt="Photo of Philip Kim" width="500" height="600"/> -->
+            </photoCard>
+            <!--Float to the right-->
+            <p>Hello! My name is Philip Kim. I graduated from the University of 
+                Washington with a triple major consisting of: Linguistics, Asian 
+                Languages & Cultures, and Chinese (Language). My undergraduate 
+                studies also includes a one year study abroad in Taiwan where I 
+                interned for a museum centered on Formosan Aborigines. I'm 
+                currently studying coding through UCI's Coding Bootcamp Program, 
+                and am planning to advance my studies in Pharmacy.
+            </p>
+            <br>
+            <p>Below, I've provided a few samples of my work. Peruse at your 
+                convenience. However, please note that my portfolio is still 
+                growing, so there are placeholders for some of the work sample 
+                slots.
+            </p>
+        </intro>
+    </section>
+    <section id="Work_Samples">
+        <h1>Work Samples</h1>
+        <works class="card">
+            <h2 class="card-header">PreWork Study Guide</h2>
+            <!-- <img src=".jpg" alt="Photo of Philip Kim" width="500" height="600"/> -->
+            <!-- For each 'works' include a title, image, and reactive UI -->
+        </works>
+        <works class="card">
+            <h2 class="card-header">CSS Snippets</h2>
+        </works>
+        <works class="card">
+            <h2 class="card-header">Horiseon Refactor</h2>
+        </works>
+        <works class="card">
+            <h2 class="card-header">Place Holder</h2>
+        </works>
+        <works class="card">
+            <h2 class="card-header">Place Holder</h2>
+        </works>
+    </section>
+    <section id="Contacts">
+        <h1>Contacts</h1>
+        <contact>
+            <p>Phone Number: 253-380-3673</p>
+            <p>Email: octobermes@gmail.com</p>
+        </contact>
+    </section>
+</body>
 
 </html>
