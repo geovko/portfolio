@@ -8,7 +8,7 @@ This webpage is designed to showcase my skills and talents as a developer. My po
 
 To open the website portfolio, click this link here to go directly!
 
-[Philip's Portfolio][(https://geovko.github.io/portfolio/)]
+[Philip's Portfolio](https://geovko.github.io/portfolio/)
 
 *OR* Copy this link to paste it into a browser.
   ```md
