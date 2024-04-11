@@ -8,12 +8,13 @@ This webpage is designed to showcase my skills and talents as a developer. My po
 
 To open the website portfolio, click this link here to go directly!
 
-[Philip's Portfolio](https://geovko.github.io/portfolio/)
+[Philip's Portfolio](https://geovko.github.io/website-portfolio/)
 
 *OR* Copy this link to paste it into a browser.
   ```md
-https://geovko.github.io/portfolio/
+https://geovko.github.io/website-portfolio/
   ```
+
 
 At the upper-right of the webpage, three options are listed, each referring to a section on the webpage. By clicking one of these options you will be pulled to the related section of the webpage. In the Work Samples section, multiple work samples are organized into several clickable boxes. Clicking on these boxes will take you to the deployed webpage, they are indicating. However, the two boxes at the very bottom will not take you to any other site as they are only placeholders meant for future projects.
 
