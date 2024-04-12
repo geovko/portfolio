@@ -2,60 +2,70 @@
     --main-color: #0090d3;
     --main-background: #17323fbb;
     --highlight: #41e9ff;
-    --dark: #000000ce;
+    --dark: #000000b0;
     --light: #ffffff;
 }
 
 body {
-    background-color: #000b16;
     font-size: 16px;
     color: var(--light);
     font-family: TaHoma, Arial, Helvetica, sans-serif;
+    background-color: #000b16;
 }
 
 /* Main title in heading */
 h1 {
     font-size: 240%;
+    text-shadow: 1px 1px 5px var(--main-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3%;
 }
 
 /* Each section's heading */
 h2 {
     font-size: 170%;
     text-align: center;
-    margin-bottom: 12px;
+    padding: 40px 0 10px 0;
 }
 
 /* Labels for each work sample */
 h3 {
     font-size: 120%;
+    text-align: center;
     color: var(--main-color);
     background-color: var(--main-background);
     padding: 3px;
     position: relative;
-    text-align: center;
     bottom: 25px;
 }
 
-/* label for profil picture */
+/* label for profile picture */
 h4 {
     font-size: 120%;
+    text-align: center;
     color: var(--light);
-    background-color: #000000b0;
+    background-color: var(--dark);
     padding: 2px;
     position: relative;
-    text-align: center;
     bottom: 25px;
 }
 
+/* profile text and contacts */
 p {
-    padding: 20px;
+    margin-top: 15px;
+    padding: 0px 20px;
+    color: var(--light);
 }
 
+/* --- header (contains title and nav) --- */
 header {
-    padding: 20px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
-    background-color: #17323f;
+    background-color: var(--main-color);
+    border-bottom: 8px ridge var(--light);
 }
 
 nav {
@@ -68,43 +78,49 @@ nav {
 nav a {
     border: 10px;
     justify-content: space-between;
-    color: var(--main-color);
+    color: var(--highlight);
     margin: 10px;
+    font-weight: bold;
 }
 
 a {
+    /* negates hyperlink underline */    
     text-decoration: none;
-    /*color: var(--main-color);*/
 }
 
 a:hover {
-    color: var(--highlight);
+    color: var(--light);
 }
 
-div  {
-    padding: 20px 10%;
-}
-
+/* main sections (3 in total) */
 section {
+    padding: 0 10%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
-.intro {
-    justify-content: space-between;
+/* --- 1st main section (About Me) --- */
+.aboutMe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .profileImage {
-    width: 30%;
-    height: 30%;
+    width: 200px;
+    height: 300px;
+    border: 3px outset var(--highlight);
 }
 
 .profileText {
-    width: 70%;
-    height: 70%;
+    width:  70%;
+    height: 100%;
 }
 
+/* --- 2nd main section (Work Samples) --- */
 .firstCard, .card {
     margin: 1%;
     border: 3px solid var(--main-background);
@@ -113,7 +129,7 @@ section {
 .firstCard:hover, .card:hover {
     border: 3px solid var(--dark);
     h3 {
-        color: var(--highlight);
+        color: var(--light);
         background-color: var(--dark);
     }
     box-shadow: 0 0 10px var(--highlight);
@@ -124,7 +140,7 @@ section {
 }
 
 .card {
-    width: 48%;
+    width: 23%;
 }
 
 img {
@@ -132,15 +148,24 @@ img {
     height: 100%;
 }
 
+/* --- 3rd main section (contacts) --- */
 .contacts {
-    justify-content: center;
+    padding-bottom: 60px;
 }
 
-@media screen and (max-width: 768px) {
-    div  {
-        padding: 20px 1%;
-    }
+.contacts p {
+    color: var(--main-color);
+}
 
+/* two-card columns (beyond this would be four-card columns)*/
+@media screen and (max-width: 1400px) {
+    .card {
+        width: 48%;
+    }
+  }
+
+  /* one-card column */
+@media screen and (max-width: 768px) {
     .card {
         width: 100%;
     }
